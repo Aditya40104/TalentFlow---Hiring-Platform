@@ -1,0 +1,188 @@
+.candidates-page {
+  padding: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.candidate-list-container {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+}
+
+.candidate-card {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 1.5rem;
+}
+
+.candidate-card:last-child {
+  border-bottom: none;
+}
+
+.candidate-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.candidate-info {
+  flex: 1;
+}
+
+.candidate-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.candidate-name:hover {
+  color: #3b82f6;
+}
+
+.candidate-meta {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.candidate-stage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stage-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.stage-applied {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.stage-screening {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.stage-interview {
+  background: #e9d5ff;
+  color: #6b21a8;
+}
+
+.stage-offer {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.stage-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.stage-hired {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  flex: 1;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.kanban-column {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1rem;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban-column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.kanban-column-header h3 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #374151;
+}
+
+.kanban-count {
+  background: #e5e7eb;
+  color: #6b7280;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.kanban-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.kanban-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.kanban-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.kanban-card-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.375rem;
+}
+
+.kanban-card-name:hover {
+  color: #3b82f6;
+}
+
+.kanban-card-email {
+  font-size: 0.8125rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
