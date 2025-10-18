@@ -26,7 +26,7 @@ export const LandingPage = () => {
               <Button size="lg">Get Started →</Button>
             </Link>
             <a 
-              href="https://github.com" 
+              href="https://github.com/Aditya40104/TalentFlow---Hiring-Platform" 
               target="_blank" 
               rel="noopener noreferrer"
             >
